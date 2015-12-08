@@ -1,0 +1,21 @@
+{
+  "name": "node-jasmine-jquery-test",
+  "version": "1.0.0",
+  "description": "starter point for quick node testing with jasmine and jquery",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine"
+  },
+  "keywords": [
+    "jquery",
+    "node",
+    "jasmine",
+    "project"
+  ],
+  "author": "sudhir.ravindramohan",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.6.9",
+    "jsdom": "^7.2.0",
+    "jasmine": "^2.4.1"
+  }
+}

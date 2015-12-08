@@ -1,0 +1,22 @@
+{
+  "name": "node-jasmine-jquery-test",
+  "version": "10.0",
+  "authors": [
+    "Sudhir Ravindramohan <sudhir.ravindramohan@mcwaneservices.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
