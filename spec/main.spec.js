@@ -1,5 +1,5 @@
 var jsdom = require("jsdom");
-var window, $;
+var window, $, document;
 
 
 describe( 'a set of tests ', function() {
@@ -43,5 +43,12 @@ describe('a set of test that depend on DOM and jquery', function() {
         expect(el.hasClass('test-class')).toBeFalsy();
         window.render();
         expect(el.hasClass('test-class')).toBeTruthy();
+    });
+
+    it('should should build the tree when render is invoked', function() {
+        expect($("#ph1").length).toEqual(0);
+        window.render();
+        console.log(window.document.documentElement.outerHTML);
+        expect($("#ph1").length).toEqual(1);
     });
 });
