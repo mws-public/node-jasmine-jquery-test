@@ -15,9 +15,6 @@ module.exports = function(jasmine, htmlFile, callback) {
             // custom implementation to ensure the matchers is loaded using jquery instance we have prepared.
             jasmine.addMatchers(require('./jasmine-jquery-matchers')($));
 
-            // only do this after jquery is loaded using the window.
-            global.document = window.document;
-
             callback($, window);
         }
     })
